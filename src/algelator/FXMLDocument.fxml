@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="CENTER" vgap="15" hgap="15" id="GridPane" prefHeight="400" prefWidth="520" xmlns:fx="http://javafx.com/fxml/1" fx:controller="algelator.FXMLDocumentController">
+    <children>
+        <Label GridPane.rowIndex="0"  GridPane.columnIndex="0" minHeight="16" minWidth="69" fx:id="label1" text="Expression" />
+        <TextField GridPane.rowIndex="0"  GridPane.columnIndex="1" fx:id="textField1" />
+        
+        <HBox alignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="1" spacing="5.0" > 
+        <Label minHeight="16" minWidth="69" fx:id="label2"   text="Function Notation" />
+        <CheckBox fx:id="funcCheckBox"/>
+        </HBox>
+        <TextField GridPane.rowIndex="1"  GridPane.columnIndex="1" fx:id="textField2" />
+        
+        <HBox alignment="BOTTOM_RIGHT" GridPane.rowIndex="2" GridPane.columnIndex="1">
+        <Button text="Calculate" onAction="#handleButtonAction"  ></Button>
+        </HBox>
+    </children>
+</GridPane>
